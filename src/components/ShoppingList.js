@@ -21,7 +21,7 @@ function ShoppingList({ items }) {
         </select>
       </div>
       <ul className="Items">
-        {items.map((item) => (
+        {setCats.map((item) => (
           <Item key={item.id} name={item.name} category={item.category} />
         ))}
       </ul>
